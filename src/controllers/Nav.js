@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('app.controllers.Nav', [])
-.controller('NavCtrl', function ($scope, $state) {
+.controller('NavCtrl', ($scope, $state) => {
 
-  $scope.go = function (state) {
+  $scope.go = (state) => {
     $state.go(state);
   }
 
